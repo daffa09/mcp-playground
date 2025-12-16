@@ -1,0 +1,127 @@
+.prompt-input-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2);
+}
+
+.prompt-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.prompt-textarea {
+  width: 100%;
+  padding: var(--space-2);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  resize: vertical;
+  min-height: 80px;
+  transition: border-color 0.2s;
+}
+
+.prompt-textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+.prompt-textarea::placeholder {
+  color: var(--text-tertiary);
+}
+
+.prompt-textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.prompt-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.examples {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+
+.examples-label {
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+}
+
+.example-btn {
+  padding: 0.375rem 0.75rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.example-btn:hover:not(:disabled) {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--accent-primary);
+}
+
+.example-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.action-buttons {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--accent-primary-hover);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,60 @@
+.app-header {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--space-2) var(--space-3);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title h1 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.title-icon {
+  font-size: 1.5rem;
+}
+
+.header-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0.25rem 0 0 0;
+  font-weight: 400;
+}
+
+.header-stats {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.625rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

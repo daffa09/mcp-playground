@@ -1,0 +1,141 @@
+:root {
+  /* Dark mode color palette */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #252525;
+  --bg-tertiary: #333333;
+  --bg-hover: #2a2a2a;
+  
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --text-tertiary: #707070;
+  
+  --accent-primary: #3b82f6;
+  --accent-primary-hover: #2563eb;
+  --accent-success: #10b981;
+  --accent-error: #ef4444;
+  --accent-warning: #f59e0b;
+  --accent-pending: #8b5cf6;
+  
+  --border-color: #404040;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  /* Spacing (8px base unit) */
+  --space-1: 0.5rem;  /* 8px */
+  --space-2: 1rem;    /* 16px */
+  --space-3: 1.5rem;  /* 24px */
+  --space-4: 2rem;    /* 32px */
+  --space-6: 3rem;    /* 48px */
+  
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--space-2);
+}
+
+h1 { font-size: 1.5rem; } /* 24px */
+h2 { font-size: 1.25rem; } /* 20px */
+h3 { font-size: 1.125rem; } /* 18px */
+
+code,  pre {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem; /* 13px */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Utility classes */
+.monospace {
+  font-family: var(--font-mono);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-success {
+  color: var(--accent-success);
+}
+
+.text-error {
+  color: var(--accent-error);
+}
+
+.text-warning {
+  color: var(--accent-warning);
+}
