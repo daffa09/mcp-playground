@@ -2,10 +2,12 @@
 <!-- slug: mcp-developer-playground -->
 <!-- title: MCP Developer Playground -->
 <!-- description: Interactive MCP-powered developer assistant with LLM-driven workspace analysis tools and intelligent reasoning -->
-<!-- image: https://github.com/user-attachments/assets/your-image-id-here -->
+<!-- image: https://github.com/user-attachments/assets/108a0dcd-3857-4489-a3d6-5954f5f42816 -->
 <!-- tags: typescript, nodejs, express, react, mcp, llm, ai-tools, developer-assistant, workspace-automation, vite -->
 
 # MCP Developer Workspace
+
+<img width="1545" height="882" alt="image" src="https://github.com/user-attachments/assets/108a0dcd-3857-4489-a3d6-5954f5f42816" />
 
 **An AI-powered developer assistant that safely exposes project context through standardized MCP (Model Context Protocol) tools.**
 
